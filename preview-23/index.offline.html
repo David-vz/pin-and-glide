@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#315d62">
+		<title>Pin &amp; Glide is offline</title>
+		<style>
+html {
+	background-color: #315d62;
+	color: #f4f7fb;
+}
+
+body {
+	font-family: Nunito, ui-rounded, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+	margin: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 1.6rem;
+	font-weight: 900;
+	margin: 0 0 0.5rem;
+}
+
+p {
+	margin: 0 0 2rem;
+	max-width: 22rem;
+	line-height: 1.4;
+	color: #d6e4e5;
+}
+
+button {
+	font: inherit;
+	font-weight: 800;
+	font-size: 1rem;
+	color: #3a2516;
+	background: #f5b257;
+	border: none;
+	border-radius: 12px;
+	min-height: 48px;
+	padding: 0 28px;
+	cursor: pointer;
+}
+		</style>
+	</head>
+	<body>
+		<h1>Pin &amp; Glide needs a connection once</h1>
+		<p>The first visit downloads the game. After that it opens offline from your home screen.</p>
+		<button type="button">Try again</button>
+		<script>
+document.querySelector('button').addEventListener('click', () => {
+	window.location.reload();
+});
+		</script>
+	</body>
+</html>
